@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 10;
+  box-sizing: border-box;
+}
+
+.header {
+  overflow-x: hidden;
+  background: linear-gradient(
+    124.05deg,
+    rgba(0, 49, 112, 0.9) 52.28%,
+    rgba(2, 62, 138, 0.81) 68.75%
+  );
+  width: 100%;
+}
+
+.nav_bar {
+  display: flex;
+  width: 100vw;
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.image {
+  background: transparent;
+}
+.link_btn_nav {
+  display: flex;
+  width: 15vw;
+  justify-content: space-around;
+}
+
+.allowed {
+  font-family: "Work Sans";
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.link_btn_nav a {
+  font-family: "Work Sans";
+  text-decoration: none;
+  color: white;
+}
+.nav_link:hover {
+  text-decoration: underline;
+}
+
+.logo_div {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 20;
+  padding: 0 5%;
+}
+
+.logo_title {
+  width: 110px;
+  height: 36px;
+  margin-left: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.line {
+  width: 35px;
+  height: 1.5px;
+  background-color: #ffffff;
+  margin: 7px;
+  border-radius: 2px;
+  margin: 8px;
+}
+
+.button_div {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+blue_circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #023e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-up {
+  transform: rotate(0deg);
+}
+/* .arrow-down {
+  animation-name: arrowMoveUp;
+  animation-duration: 1s;
+  transform: rotate(180deg);
+}
+
+@keyframes arrowMoveUp {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+} */
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions_heading {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 250%;
+  line-height: 53px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #023e8a;
+  margin: 5% 0;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: q1;
+    transform: scale(1);
+  }
+.link_divs {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+.link_div a {
+  display: block;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.link {
+  margin: 30px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+  .subtitle {
+    font-weight: 200;
+    padding-left: 20px;
+    transform: translateY(-20px);
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 100%;
+  }
+
+  .drop_section_outer {
+    margin-top: 20px;
+    width: 85%;
+    height: 40%;
+  }
+  .file {
+    transform: scale(0.5);
+    margin-top: -40px;
+  }
+  .upload_div {
+    width: 100%;
+    margin-top: -50px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .upload {
+    margin: 5% 0 -2% 0;
+  }
+  .or {
+    margin: 5% 0 -2% 0;
+  }
+  .button_div {
+    height: 150vh;
+    z-index: 0;
+    padding-top: 200px;
+    width: 50vw;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #023e8a;
+    visibility: hidden;
+  }
+  .button_div_active {
+    visibility: visible;
+    animation-name: fade;
+    animation-duration: 500ms;
+  }
+  .burger {
+    display: block;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+      width: 0vw;
+      height: 0vh;
+    }
+    to {
+      opacity: 1;
+      width: 50vw;
+      height: 150vh;
+    }
+  }
+
+  
